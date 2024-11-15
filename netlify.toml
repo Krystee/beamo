@@ -1,15 +1,12 @@
 [build]
-  command = "remix build"
+  command = "pnpm run build"
   publish = "public"
-
-[dev]
-  command = "remix dev"
-  port = 3000
 
 [[redirects]]
   from = "/*"
-  to = "/.netlify/functions/server"
+  to = "/index.html"
   status = 200
 
 [functions]
-  included_files = ["server/build/**"]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"

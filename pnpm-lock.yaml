@@ -35,7 +35,7 @@ dependencies:
 
 devDependencies:
   '@remix-run/dev':
-    specifier: ^2.8.1
+    specifier: ^2.14.0
     version: 2.14.0(@remix-run/react@2.14.0)(@remix-run/serve@2.14.0)(typescript@5.6.3)
   '@types/react':
     specifier: ^18.2.65
